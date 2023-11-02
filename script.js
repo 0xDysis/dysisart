@@ -10,6 +10,7 @@ var flowfield;
 
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent('myCanvas');
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
   
@@ -86,7 +87,7 @@ function Particle() {
   }
 
   this.show = function() {
-    stroke(255, 50);
+    stroke(204, 100);
     this.updatePrev();
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
   }
