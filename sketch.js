@@ -11,8 +11,10 @@ var sketch = function(p) {
     p.setup = function() {
       var canvas = p.createCanvas(p.windowWidth, p.windowHeight);
       canvas.parent('myCanvas');
-      canvas.position(0, 0);
-      canvas.style('z-index', '-1');
+canvas.position(0, 0);
+canvas.style('z-index', '-1');
+
+     
     
       cols = p.floor(p.width / scl);
       rows = p.floor(p.height / scl);
@@ -78,10 +80,11 @@ var sketch = function(p) {
       };
   
       this.show = function() {
-        p.stroke(200, 100);
-        this.updatePrev();
+        p.stroke(200, 50);
         p.line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
+        this.updatePrev();
       };
+      
   
       this.updatePrev = function() {
         this.prevPos.x = this.pos.x;
@@ -111,6 +114,9 @@ var sketch = function(p) {
   window.onload = function() {
     new p5(sketch);
   };
+
+
+  
+  
  
-
-
+ 
