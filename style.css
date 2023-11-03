@@ -5,7 +5,7 @@
 }
 
 :root {
-	--image-size: clamp(200px, 40vw + 1rem, 650px);
+	--image-size: clamp(200px, 50vw + 1rem, 650px);
 }
 @keyframes fadeIn {
     from {
