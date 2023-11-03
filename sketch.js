@@ -21,10 +21,10 @@ canvas.style('z-index', '-1');
   
       flowfield = new Array(cols * rows);
   
-      for (var i = 0; i < 800; i++) {
+      for (var i = 0; i < 900; i++) {
         particles[i] = new Particle(p);
       }
-      p.background(2);
+      p.background(0);
     };
   
     p.draw = function() {
@@ -80,7 +80,7 @@ canvas.style('z-index', '-1');
       };
   
       this.show = function() {
-        p.stroke(200, 50);
+        p.stroke(255, 255, 255, 20);
         p.line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
         this.updatePrev();
       };
