@@ -1,15 +1,20 @@
+
 var inc = 0.1;
 var scl =  20;
-var cols, rows;
+var cols = 0;
+var rows = 0;
 
 var zoff = 0;
 
 var particles = [];
 
-var flowfield;
+var flowfield = [];
+window.addEventListener('resize', function() {
+    resizeCanvas(window.innerWidth, window.innerHeight);
+});
 
 function setup() {
-  var canvas = createCanvas(windowWidth, windowHeight);
+    var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('myCanvas');
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
@@ -55,9 +60,7 @@ function draw() {
   }
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+
 
 function Particle() {
   this.pos = createVector(random(width), random(height));
