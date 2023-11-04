@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     flex-direction: column; 
     
 }
@@ -31,10 +31,11 @@ body {
     position: relative;
     z-index: 0;
     font-size: 80px; 
-    color: rgba(198, 198, 198, 0.839);
-    text-shadow: 0px 0px 8px #ffffff68;
+    color: rgba(181, 180, 180, 0.53);
+    text-shadow: 0px 0px 8px #ffffff;
     transform: scaleX(2); 
     animation: fadeIn 2s ease-in-out;
+    letter-spacing: 5px;
 }
 
 button {
@@ -53,6 +54,7 @@ button {
     position: relative;
     overflow: hidden;
     animation: fadeIn 2s ease-in-out;
+    letter-spacing: 3px;
 }
 
 button:hover {
@@ -66,9 +68,9 @@ button:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(204, 202, 202, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(138, 138, 138, 0.1), transparent);
     transform: translateX(-100%);
-    animation: light 2s infinite;
+    animation: light 4s infinite;
 }
 
 @keyframes light {
